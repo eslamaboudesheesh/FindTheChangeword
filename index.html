@@ -2,88 +2,85 @@
 <html>
 <head>
 	<title>FindTheChangeWord</title>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-	
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+	</script>
 	<style>
 
-	    .imagearea-3 , .imagearea-4  {
-	       border: 1rem solid rgba(0,0,0,.1);
-	   
-	   height: 200px;
-	overflow-y: scroll;
-	width: 1032px;
-	overflow-x: hidden;
-	    }
-	    #a , #b {
-	        height: 100px;
-	   
-	    }
-	    .container{
-	        display:flex;
-	        flex-direction: row;
-	    }
-	    del {
-	   text-decoration: none;
-	   color: #b30000;
-	   background: #fadad7;
-	}
-	ins {
-	   background: #eaf2c2;
-	   color: #406619;
-	   text-decoration: none;
-	}
-	.old-post .resultt  ins  {
+	       .imagearea-3 , .imagearea-4  {
+	          border: 1rem solid rgba(0,0,0,.1);
+	      
+	      height: 200px;
+	   overflow-y: scroll;
+	   width: 1032px;
+	   overflow-x: hidden;
+	       }
+	       #a , #b {
+	           height: 100px;
+	      
+	       }
+	       .container{
+	           display:flex;
+	           flex-direction: row;
+	       }
+	       del {
+	      text-decoration: none;
+	      color: #b30000;
+	      background: #fadad7;
+	   }
+	   ins {
+	      background: #eaf2c2;
+	      color: #406619;
+	      text-decoration: none;
+	   }
+	   .old-post .resultt  ins  {
+
+	      background-color: white;
+	      color: black;
+	      display: none;
+	   }
+
+	   .new-post .resultt  del  {
 
 	   background-color: white;
 	   color: black;
 	   display: none;
-	}
+	   }
 
-	.new-post .resultt  del  {
+	   .text-area-post {
+	   display: block;
+	   }
+	   .text-area-post textarea  {
+	      width: 50vh
+	   }
+	  .button-class{
+	margin-top: 40px;
+	display: flex;
+	   flex-direction: row-reverse;
 
-	background-color: white;
-    color: black;
-    display: none;
-	}
-
-	.text-area-post {
-	display: block;
-	}
-	.text-area-post textarea  {
-	   width: 50vh
-	}
-   .button-class{
-margin-top: 40px;
-display: flex;
-    flex-direction: row-reverse;
-
-   }
+	  }
 	</style>
-	</head>
-	<body>
-	
+</head>
+<body>
 	<div class="container">
-		<div class="imagearea" style="display: none" >
-			<textarea class="old-area" id='a' >old Version control is a tool for understanding how ideas evolve over time - a record of the imperfect nature of our effort.</textarea>
+		<div class="imagearea" style="display: none">
+			<textarea class="old-area" id='a'>old Version control is a tool for understanding how ideas evolve over time - a record of the imperfect nature of our effort.</textarea>
 		</div>
-		<div class="imagearea-2" >
-
-                <div class="jumbotron">
-                        <h1>My new post</h1>      
-                      </div>
-                      
-                      <div class="container">
-                            <div id='b'>new Version control is a tool for understanding how ideas evolve over time - a record of the imperfect nature of ohurman effort that is an expression of the human desire towards understanding</div>
-                      </div>
+		<div class="imagearea-2">
+			<div class="jumbotron">
+				<h1>My new post</h1>
+			</div>
+			<div class="container">
+				<div id='b'>
+					new Version control is a tool for understanding how ideas evolve over time - a record of the imperfect nature of ohurman effort that is an expression of the human desire towards understanding
+				</div>
+			</div>
 		</div>
 	</div>
-	
 	<div class="container conatiner-2">
 		<div class="imagearea-3 new-post">
 			<div class='resultt'></div>
@@ -91,15 +88,10 @@ display: flex;
 		<div class="imagearea-4 old-post">
 			<div class='resultt'></div>
 		</div>
-    </div>
-    
-    <div class="container  button-class">
-            <button type="button" class="btn btn-primary " style="margin: 10px">Share</button>
-            <button type="button" class="btn btn-danger" style="margin: 10px">Reject</button>
-            
-   </div>
- 
-
+	</div>
+	<div class="container button-class">
+		<button class="btn btn-primary" style="margin: 10px" type="button">Share</button> <button class="btn btn-danger" style="margin: 10px" type="button">Reject</button>
+	</div>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.12.2/plugins/emoji/trumbowyg.emoji.min.js" type="text/javascript">
